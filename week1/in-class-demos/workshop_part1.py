@@ -14,7 +14,7 @@
 
 animals = {'Lion': 'Brave', 'Tiger': 'Fierce', 'Elephant': 'Large', 'Giraffe': 'Tall', 'Zebra': 'Striped'}
 animals['Lion'] = 'King'
-print(animals)
+print(animals.items())
 
 animals = set(animals)
 print(animals)
