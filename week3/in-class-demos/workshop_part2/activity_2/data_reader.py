@@ -15,7 +15,7 @@ def read_sales_data(filename):
             sales_data.append(row)
     return sales_data
 
-
+sales_data = read_sales_data('sales_data_v2.csv')
 
 # Task 2: Calculate total revenue for each product
 
@@ -25,14 +25,14 @@ def read_sales_data(filename):
 
 
 
-# Display results
-print("Total revenue for each product:")
-for product, revenue in product_revenue.items():
-    print(f"{product}: ${revenue:.2f}")
-
-print("\nThe product with the highest total units sold:")
-print(max_units_sold_product)
-
-print("\nAverage unit price for each product:")
-for product, avg_price in product_unit_price.items():
-    print(f"{product}: ${avg_price:.2f}")
+# # Display results
+# print("Total revenue for each product:")
+# for product, revenue in product_revenue.items():
+#     print(f"{product}: ${revenue:.2f}")
+#
+# print("\nThe product with the highest total units sold:")
+# print(max_units_sold_product)
+#
+# print("\nAverage unit price for each product:")
+# for product, avg_price in product_unit_price.items():
+#     print(f"{product}: ${avg_price:.2f}")
