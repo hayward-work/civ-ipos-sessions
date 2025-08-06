@@ -119,13 +119,13 @@ print()
 #
 # # Exercise 3a:
 # # Refactor to list comprehension
-# def make_2d_cool(rows, cols, value=None):
-#     '''Same function as above implemented as a list comprehension
-#     '''
-#     # Example 1
-#     # return [[value for _ in range(cols)]
-#     #         for _ in range(rows)]
-#     # two_dim_list = []
+def make_2d_cool(rows, cols, value=None):
+    '''Same function as above implemented as a list comprehension
+    '''
+    # Example 1
+    return [[value for _ in range(cols)]
+            for _ in range(rows)]
+    # two_dim_list = []
 #
 #     # # Example 2 - add watch statements
 #     # for i in range(rows):
