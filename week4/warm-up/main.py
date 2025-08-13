@@ -1,5 +1,4 @@
-def greeter(name):
-    return f" Hello {name}"
+from src.greeter import greeter
 
-
-print(greeter('John'))
+if __name__ == '__main__':
+    print(greeter('John'))
