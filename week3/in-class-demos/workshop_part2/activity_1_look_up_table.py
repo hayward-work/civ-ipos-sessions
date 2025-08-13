@@ -3,21 +3,22 @@
 # with a tuple containing the product name and its price.
 
 # Define a function that creates the product lookup dictionary
+def create_product_lookup(a, b):
 
     # TODO: Initialise an empty dictionary to store the catalog
-
+    lookup = {}
     # TODO: Iterate over the outer keys (e.g., rows or categories)
-
+    for row in a:
         # TODO: Iterate over the inner keys (e.g., individual product codes)
-
+        for col in row:
             # TODO: Retrieve the product code
-
+            lookup [row] = b[row][col]
             # TODO: Use the corresponding product data as the value
             
             # TODO: Add the code-data pair to the catalog
 
     # Return the completed catalog
-
+    return lookup
 
 # Define the product code grid as a dictionary of dictionaries
 product_code_grid = {
@@ -43,11 +44,13 @@ product_data_grid = {
     }
 }
 
-# Call the function with the new dictionary-based inputs
-product_catalog = build_product_catalog(product_code_grid, product_data_grid)
+create_product_lookup(product_code_grid, product_data_grid)
 
-# Display the resulting product catalog
-print(product_catalog)
+# # Call the function with the new dictionary-based inputs
+# product_catalog = build_product_catalog(product_code_grid, product_data_grid)
+#
+# # Display the resulting product catalog
+# print(product_catalog)
 
 # Expected Output:
 # {
